@@ -23,7 +23,6 @@
 .product {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     padding:20px
 }
 
@@ -39,30 +38,112 @@
     justify-content: space-between;
 }
 
+.product__big-pic {
+    margin-left: 80px;
+}
+
 .product__text-info {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    margin-left: 80px;
 }
 
 .product__title {
-    font-family: circe_700, serif;
+    font-family: circe_700, monospace;
+    font-size: x-large;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 40px;
 }
 
+.category {
+    margin-top: 10px;
+}
+
+.category__elem {
+    font-family: circe_300, serif;
+}
+
+.category__elem:not(:first-child) {
+    margin-left: 30px;
+}
+
+/* TODO: шрифты, жирность */
 .product__price {
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
+    font-family: circe_300, serif;
 }
 
 .product__price_del {
-
+    text-decoration: line-through;
 }
 
 .product__price_actual {
-
+    margin-left: 5px;
 }
 
 .product__price_promo {
+    margin-left: 25px;
+}
+
+.product__addition {
+    background-color: #F4F4F4;
+    margin-top: 15px;
+    padding: 15px;
+    font-family: circe_300, serif;
+}
+
+/*TODO: разобраться с высотой кнопок и line-height*/
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    font-family: circe_600, monospace;
+    height: auto;
+}
+
+.buttons__basket {
+    background-color: blue;
+    color: white;
+    font-family: circe_600, monospace;
+    font-size: medium;
+    text-transform: uppercase;
+    padding: 15px 70px;
+    border: none;
+    line-height: .5em;
+}
+
+.buttons__favorites {
+    font-family: circe_600, monospace;
+    text-transform: uppercase;
+    background-color: white;
+    padding: 10px 70px;
+    margin-left: 20px;
+    border: 2px groove #a49b9b;
+    border-radius: 0;
+    line-height: .5em;
+}
+
+.product__description {
+    margin-top: 40px;
+
+    font-family: circe_300, serif;
+    font-size: small;
 
 }
 
+/*TODO: нарисовать кнопки*/
+
+.share {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.share__buttons {
+    display: flex;
+    flex-direction: row;
+}
