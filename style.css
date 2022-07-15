@@ -1,5 +1,21 @@
+@font-face {
+    font-family: circe_300;
+    src: url("./fonts/circe_300.ttf");
+}
+
+@font-face {
+    font-family: circe_600;
+    src: url("./fonts/circe_600.ttf");
+}
+
+@font-face {
+    font-family: circe_700;
+    src: url("./fonts/circe_700.ttf");
+}
+
 .content {
     max-width: 1200px;
+    margin: 20px auto;
     height: auto;
     border: 2px groove gray;
 }
@@ -8,11 +24,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding:20px
 }
 
 .product__pictures {
     display: flex;
     flex-direction: row;
+    margin-left: 50px;
 }
 
 .product__list-pic {
@@ -21,6 +39,30 @@
     justify-content: space-between;
 }
 
-/* .product__title {
-    
-} */
+.product__text-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.product__title {
+    font-family: circe_700, serif;
+}
+
+.product__price {
+    display: flex;
+    flex-direction: row;
+}
+
+.product__price_del {
+
+}
+
+.product__price_actual {
+
+}
+
+.product__price_promo {
+
+}
+
