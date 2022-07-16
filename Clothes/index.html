@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8"/>
     <link href="style.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="zoom.js"></script>
     <title>Cloth</title>
 </head>
 
@@ -11,11 +13,11 @@
     <div class="product">
         <div class="product__pictures">
             <div class="product__list-pic">
-                <img class="product__mini-pic1" src="./img/gwjl-uTS7Os.jpg" alt=""/>
-                <img class="product__mini-pic2" src="./img/PT-bauDUmRQ.jpg" alt=""/>
-                <img class="product__mini-pic3" src="./img/Rk7qQjsAFTI.jpg" alt=""/>
+                <img class="product__mini-pic1" src="img/pic1.jpg" alt=""/>
+                <img class="product__mini-pic2" src="img/pic2.jpg" alt=""/>
+                <img class="product__mini-pic3" src="img/pic3.jpg" alt=""/>
             </div>
-            <img class="product__big-pic" src="./img/big-pic.jpg" alt=""/>
+            <img class="product__big-pic" src="img/pic1.jpg" alt=""/>
         </div>
         <div class="product__text-info">
             <div class="product__title">Рубашка Medicine</div>
@@ -27,11 +29,17 @@
             <div class="product__price">
                 <div class="product__price_del">2 699</div>
                 <div class="product__price_actual">2 499 ₽</div>
-                <div class="product__price_promo">2 227 ₽<span>- с промокодом</span></div>
+                <div class="product__price_promo">2 227 ₽<span> — с промокодом</span></div>
             </div>
             <div class="product__addition">
-                <div class="product__available">✔ В наличии в магазине <a href="#">Lamoda</a></div>
-                <div class="product__delivery">⛟ Бесплатная доставка</div>
+                <div class="product__addition_badges">
+                    ✔ <br>
+                    ⛟
+                </div>
+                <div class="product__addition_caption">
+                    В наличии в магазине <a href="#">Lamoda</a> <br>
+                    Бесплатная доставка
+                </div>
             </div>
             <div class="buttons">
                     <button class="buttons__basket">В магазин</button>
@@ -43,19 +51,12 @@
             <div class="share">
                 <div class="share__caption">Поделиться:</div>
                 <div class="share__buttons">
-                    <div class="share__buttons share__buttons_vk">
-                        <button></button>
-                    </div>
-                    <div class="share__buttons share__buttons_google">
-                        <button></button>
-                    </div>
-                    <div class="share__buttons share__buttons_facebook">
-                        <button></button>
-                    </div>
-                    <div class="share__buttons share__buttons_twitter">
-                        <button></button>
-                    </div>
+                        <button class="share__buttons_vk"></button>
+                        <button class="share__buttons_google"></button>
+                        <button class="share__buttons_facebook"></button>
+                        <button class="share__buttons_twitter"></button>
                 </div>
+                <div class="triangle-left"></div>
                 <div class="share__number">123</div>
             </div>
         </div>
