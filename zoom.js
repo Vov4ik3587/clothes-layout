@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    
     $('img.product__mini-pic1').mouseenter(function () {
         $('img.product__big-pic').attr('src', './img/pic1.jpg')
     }).mouseleave(function () {
